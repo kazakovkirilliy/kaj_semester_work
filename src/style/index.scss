@@ -1,0 +1,57 @@
+:root {
+  font-size: 62.5%;
+  body {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+  }
+
+  .react-icons {
+    vertical-align: middle;
+  }
+
+  .tooltip{
+    position: relative;
+
+    &:hover::after{
+      content: attr(title);
+      position: absolute;
+      font-weight: 100;
+      background: #5f6068;
+      color: #fff;
+      padding: 1.5rem;
+      border-radius: 5px;
+      top: 4rem;
+      z-index: 1;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+li {
+  list-style: none;
+}
+a,
+a:active {
+  text-decoration: none;
+  color: #3b495e;
+}
