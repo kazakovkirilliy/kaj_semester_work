@@ -41,6 +41,7 @@ export const Login: React.FC<RouteComponentProps> = () => {
               label={'Email'}
               placeholder={'Enter email'}
               name={'email'}
+              autoFocus
             />
             <InputField
               fieldType={'string'}

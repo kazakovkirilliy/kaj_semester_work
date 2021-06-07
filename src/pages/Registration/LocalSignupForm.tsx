@@ -52,6 +52,7 @@ export const LocalSignupForm: React.FC = () => {
               placeholder="First name"
               name="firstName"
               required
+              autoFocus
             />
             <InputField
               fieldType="string"
