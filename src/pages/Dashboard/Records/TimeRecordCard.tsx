@@ -38,9 +38,9 @@ export const TimerecordCard: React.FC<Props> = ({ tr }) => {
   return (
     <S.Wrapper>
       <S.TimerecordInfo>
-        <S.Description>
+        <S.Title>
           {tr.description ? tr.description : 'New time record'}
-        </S.Description>
+        </S.Title>
         <S.ExtraInfo>
           <S.TimeContainer>
             <HiClock />
@@ -63,7 +63,7 @@ export const TimerecordCard: React.FC<Props> = ({ tr }) => {
 };
 
 const S = {
-  Wrapper: styled.div`
+  Wrapper: styled.article`
     display: flex;
     align-items: center;
     padding: 0.8rem;
@@ -85,7 +85,10 @@ const S = {
     display: flex;
     flex-direction: column;
   `,
-  Description: styled.p``,
+  Title: styled.h4`
+    color: ${colors.darkGrey};
+    font-weight: 400;
+  `,
   TimeContainer: styled.div`
     display: flex;
     align-items: center;
