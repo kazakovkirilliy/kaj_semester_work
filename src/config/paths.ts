@@ -1,5 +1,5 @@
-export const BASE_URL = 'http://localhost:3000/';
-export const API_URL = 'http://localhost:8080/trackio';
+export const BASE_URL = 'https://trackio.oleksandro.wtf/';
+export const API_URL = 'https://trackio.oleksandro.wtf/api';
 
 export const pathConstants = {
   login: '/login',

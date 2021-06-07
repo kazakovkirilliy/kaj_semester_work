@@ -24,8 +24,6 @@ export const createTimerecord = async(projectId: number | undefined, timerecordP
     if (!projectId) return;
     return axios.post(API_URL + `/projects/${projectId}/timerecords`, timerecordPayload, {withCredentials: true}).then((res) => {
         if(res.headers.location) {
-            console.log(res.headers.location)
-
             return axios.get(res.headers.location, {withCredentials: true}).then((res) => {
                 if (res.data) {
                     setTagsToTimerecord(projectId, res.data.id, timerecordPayload.tags)

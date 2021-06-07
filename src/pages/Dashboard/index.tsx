@@ -12,9 +12,9 @@ import { Project, useProjects } from './Projects/useProjects';
 import { useTasks } from './MyTasks/useTasks';
 import { DashboardContext } from './DashboardContext';
 import { ProjectInfo } from './ProjectInfo';
-import { useTags } from './TimeRecords/useTags';
-import { useTimerecords } from './TimeRecords/useTimerecords';
-import { Timerecords } from './TimeRecords';
+import { Timerecords } from './Records';
+import { useTags } from './Records/useTags';
+import { useTimerecords } from './Records/useTimerecords';
 
 export const Dashboard: React.FC<RouteComponentProps> = () => {
   const [willRefresh, setWillRefresh] = useState(false);
